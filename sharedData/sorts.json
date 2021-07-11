@@ -1,0 +1,25 @@
+[    
+    {
+        "value":"popularity.desc",
+        "display":"popularity: high to low"
+    },{
+        "value":"popularity.asc",
+        "display":"popularity: low to high"
+    },
+    {
+        "value":"release_date.asc",
+        "display":"oldest to newest"
+    },
+    {
+        "value":"release_date.desc",
+        "display":"newest to oldest"
+    },
+    {
+        "value":"vote_average.asc",
+        "display":"user score: low to high"
+    },
+    {
+        "value":"vote_average.desc",
+        "display":"user score: high to low"
+    }
+]

@@ -1,0 +1,116 @@
+[
+    {
+        "categories": "genre",
+        "value": "👊",
+        "meaning": "Action",
+        "id": "28"
+    },
+    {
+        "categories": "genre",
+        "value": "🧭",
+        "meaning": "Adventure",
+        "id": "12"
+    },
+    {
+        "categories": "genre",
+        "value": "🏰",
+        "meaning": "Animation",
+        "id": "16"
+    },
+    {
+        "categories": "genre",
+        "value": "🚓",
+        "meaning": "Crime",
+        "id": "80"
+    },
+    {
+        "categories": "genre",
+        "value": "🎭",
+        "meaning": "Comedy",
+        "id": "35"
+    },
+    {
+        "categories": "genre",
+        "value": "🌎",
+        "meaning": "Documentary",
+        "id": "99"
+    },
+    {
+        "categories": "genre",
+        "value": "🔥",
+        "meaning": "Drama",
+        "id": "18"
+    },
+    {
+        "categories": "genre",
+        "value": "👪",
+        "meaning": "Family",
+        "id": "10751"
+    },
+    {
+        "categories": "genre",
+        "value": "🧚",
+        "meaning": "Fantasy",
+        "id": "14"
+    },
+    {
+        "categories": "genre",
+        "value": "📜",
+        "meaning": "History",
+        "id": "36"
+    },
+    {
+        "categories": "genre",
+        "value": "👻",
+        "meaning": "Horror",
+        "id": "27"
+    },
+    {
+        "categories": "genre",
+        "value": "🎶",
+        "meaning": "Music",
+        "id": "10402"
+    },
+    {
+        "categories": "genre",
+        "value": "🕵",
+        "meaning": "Mystery",
+        "id": "9648"
+    },
+    {
+        "categories": "genre",
+        "value": "💕",
+        "meaning": "Romance",
+        "id": "10749"
+    },
+    {
+        "categories": "genre",
+        "value": "🤖",
+        "meaning": "Sci-Fi",
+        "id": "878"
+    },
+    {
+        "categories": "genre",
+        "value": "📺",
+        "meaning": "TV Movie",
+        "id": "10770"
+    },
+    {
+        "categories": "genre",
+        "value": "💀",
+        "meaning": "Thriller",
+        "id": "53"
+    },
+    {
+        "categories": "genre",
+        "value": "⚔",
+        "meaning": "War",
+        "id": "10752"
+    },
+    {
+        "categories": "genre",
+        "value": "🌵",
+        "meaning": "Western",
+        "id": "37"
+    }
+]
