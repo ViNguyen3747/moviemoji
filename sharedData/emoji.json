@@ -31,12 +31,6 @@
     },
     {
         "categories": "genre",
-        "value": "🌎",
-        "meaning": "Documentary",
-        "id": "99"
-    },
-    {
-        "categories": "genre",
         "value": "🔥",
         "meaning": "Drama",
         "id": "18"
@@ -112,5 +106,11 @@
         "value": "🌵",
         "meaning": "Western",
         "id": "37"
+    },
+    {
+        "categories": "genre",
+        "value": "🌎",
+        "meaning": "Documentary",
+        "id": "99"
     }
 ]
