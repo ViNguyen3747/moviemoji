@@ -9,7 +9,7 @@ import { ICast, IProdCo, ITrailer, IProviders } from '../shared/interface';
 })
 export class DetailsService {
   private baseURL = 'https://api.themoviedb.org/3/movie/';
-  private APIkey = '8f86a3125e0768afc7552ebecec9bfbb';
+  private APIkey = 'Your-API-Key';
 
   constructor(private http: HttpClient) { }
   
