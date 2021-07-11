@@ -1,0 +1,39 @@
+<body> 
+    <button mat-raised-button (click)="close()">Close</button>
+    <h1 mat-dialog-title>{{ movie.title }}</h1>
+    <mat-dialog-content>
+        <img *ngIf="movie.backdrop_path" [src]="movie.backdrop_path">
+        <div><h3>Release date {{ movie.release_date }} </h3></div>
+        <div id="rate">
+            <mat-progress-spinner
+                color="accent"
+                mode="determinate"
+                [value]="movie.vote_average">
+            </mat-progress-spinner>
+            <div>{{movie.vote_average}}% <span>{{movie.vote_count}} Ratings</span></div>
+        </div>
+        <h2>Overview</h2>
+        <p> {{ movie.overview }}</p>
+        <h2>Casts</h2>
+        <div id="casts" *ngIf='casts.length > 0; else noData'>
+            <div class="profile" *ngFor='let cast of casts'>
+                <img *ngIf='cast.profile_path' [src]="cast.profile_path">
+                <div>{{ cast.name }} <span *ngIf='cast.character'>as {{ cast.character }}</span></div>
+            </div>
+        </div>
+        <h2>Production</h2>
+        <div id="prod" *ngIf='prods.length > 0; else noData'>
+            <div class="company" *ngFor='let company of prods'>
+                {{ company.name }}
+            </div>
+        </div>
+        <h2>Trailer</h2>
+        <mat-spinner *ngIf='!videoReady'></mat-spinner>
+        <div id="vids" *ngIf='videos.length > 0 && videoReady; else noData'>
+            <iframe width="500" height="300" *ngFor='let vid of videos' [src]='vid.key | urlPipe' frameborder="0"  allowfullscreen></iframe>
+        </div>
+        <ng-template #noData>Not Available</ng-template>
+    </mat-dialog-content>
+</body>
+
+

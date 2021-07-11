@@ -1,0 +1,36 @@
+<body>
+<div id="emoji">
+    <div id="list">       
+        <span *ngFor="let emoji of emojiList" (click)="add(emoji)" #tooltip="matTooltip" [matTooltip]="emoji.meaning" matTooltipPosition="above">
+            {{ emoji.value }}
+        </span>
+    </div>
+    <div id="chip-bar">
+        <mat-chip-list aria-label="emoji selection">
+            <mat-chip *ngFor="let emoji of selectedEmoji" [selectable]="selectable"
+            [removable]="removable" (removed)="remove(emoji)">
+                {{ emoji.value }}
+                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>    
+            </mat-chip> 
+        </mat-chip-list>
+    </div>
+</div>
+<mat-paginator #paginator [length]="total_results" showFirstLastButtons
+            [hidePageSize]="true" (page)="getNextList($event)">
+            <div>sajhd</div>
+</mat-paginator>
+<mat-form-field *ngIf='movieList.length > 0' color="accent">
+    <mat-select [formControl]="sortControl" name="sort">
+        <mat-option *ngFor='let option of sortOption' [value]="option.value">{{ option.display }}</mat-option>
+    </mat-select>
+</mat-form-field>
+<div class="container">    
+    <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+        <div class="movie-card" *ngFor="let movie of movieList" (click)="openDialog(movie)">
+            <img *ngIf="movie.poster_path; else noPoster" [src]="movie.poster_path">
+            <ng-template #noPoster>
+                {{ movie.title }}
+            </ng-template>
+        </div>   
+</div>
+</body>
